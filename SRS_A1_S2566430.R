@@ -1,10 +1,14 @@
 # Teng Wei Yeo, S2566430
-# Assignment 1 of Statistical Research Skills
-# Sloughter et al. (2010)
+# MATH11188 Statistical Research Skills: Assignment 1.
+# Ideas are from Sloughter, J. M., Gneiting, T., and Raftery, A. E. (2010), 
+# Probabilistic Wind Speed Forecasting Using Ensembles and Bayesian Model 
+# Averaging. Journal of the American Statistical Association, 105(489), 25-35.
+
+### Brief Outline ###
 # This code aims to simulate if there is any difference in the BMA PDF for 
 # the fully discretised method, versus the standard method.
 # This code assumes there is only 1 location, with one observation for each
-# day over 20 days. For this example, all these observations are training data.
+# day over 20 days. For this example, all observations are training data.
 
 # An ensemble of 4 members are used. This toy example assumes that the
 # individual prediction PDF of each member and all the hyperparameters
@@ -12,16 +16,21 @@
 
 # The E and CM-1 steps suggested in Sloughter et al. (2010) for deriving
 # the weights which maximise the likelihood is then applied to derive
-# the BMA PDF of the four individual PDFs which best fits the observed data.
+# the BMA PDF which best fits the observed data.
+
 # The BMA PDF of the standard method, vs. the fully discretised method, 
 # are compared. Note that no actual forecasting is being done in this toy 
 # example. Neither is there the need for an iterative EMCE algorithm, since the
-# hyperparameters of the individual PDFs are known a priori.
-# The goal is to simply compare the shape of the BMA PDFs as a result
-# of the two different methods.
+# hyperparameters of the individual PDFs are known a priori. The goal is to 
+# simply compare the shape of the BMA PDFs as a result of the two different 
+# methods.
 
 # The output of this code is a graph showing the BMA PDF of the Standard Method,
 # and the BMA PDF of the Fully Discretised Method.
+# The code also prints the 77.8% symmetric prediction interval for both methods.
+
+# The conclusion is that both methods arrive at very similar BMA PDFs, 
+# and have almost identical 77.8% symmetric prediction intervals.
 
 ############# Model set-up #############
 library(ggplot2)
@@ -151,6 +160,9 @@ plot2 <- ggplot(collect_df_2, aes(x = collect_2)) +
           geom_vline(xintercept=quantile(collect_2, probs = c(0.111,0.889)), 
                      linetype="dotted") +
           xlab("BMA PDF for Fully Discretised")
+
+### Comparisons ### 
+
 # Plot final graphs
 grid.arrange(plot1, plot2, ncol=2)
 
