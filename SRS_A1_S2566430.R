@@ -1,8 +1,9 @@
 # Teng Wei Yeo, S2566430
 # MATH11188 Statistical Research Skills: Assignment 1.
 # Ideas are from Sloughter, J. M., Gneiting, T., and Raftery, A. E. (2010), 
-# Probabilistic Wind Speed Forecasting Using Ensembles and Bayesian Model 
-# Averaging. Journal of the American Statistical Association, 105(489), 25-35.
+# 'Probabilistic wind speed forecasting using ensembles and Bayesian model 
+# averaging', Journal of the American Statistical Association, 105(489), 
+# pp. 25-35.
 
 ### Brief Outline ###
 # This code aims to simulate if there is any difference in the BMA PDF for 
