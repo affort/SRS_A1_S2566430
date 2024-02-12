@@ -80,7 +80,6 @@ for (i in 1:length(y)){
     }
 }
 w = z_hat/20
-z_hat = c(0,0,0,0)
 
 # Calculating the maximum likelihood, for standard method
 sum = 0
