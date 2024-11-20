@@ -1,3 +1,14 @@
-Code done by Teng Wei Yeo, S2566430, for MATH11188 Statistical Research Skills: Assignment 1.
+# Statistical Research Skills: Assignment 1
 
-Ideas are from Sloughter, J. M., Gneiting, T., and Raftery, A. E. (2010), 'Probabilistic wind speed forecasting using ensembles and Bayesian model averaging', Journal of the American Statistical Association, 105(489), pp. 25-35.
+This assignment is for MATH11188 Statistical Research Skills, academic year 2023--2024. 
+The course is organised and lectured by Dr. Torben Sell, Lecturer in Machine Learning, School of Mathematics, The University of Edinburgh.
+The assignment's problem statement and marking scheme are in `Assignment 1.pdf` and `Assignment 1_marking_scheme.pdf` respectively.
+The task is to write a report on the following article: Sloughter, J. M., Gneiting, T., and Raftery, A. E. (2010). 'Probabilistic wind speed forecasting using ensembles and Bayesian model averaging', *Journal of the American Statistical Association*, 105(489), pp. 25-35.
+My report is in `TengWeiYeo_S2566430_A1_SRS.pdf`. 
+
+Sloughter et al. (2010) use discretised wind speed data.
+One of their findings were that the performance of the Bayesian Model Averaging procedure they propose was unaffected by whether the data's discretisation was accounted for during the parameter estimation via maximum likelihood estimation via the ECME algorithm. 
+To check this claim, I used simulated data to identify whether the *Standard Method* and the *Fully Discretised Method* (Sloughter et al., 2010, p. 29) give different results. 
+The results of my simulation do not reject their claims.
+
+Please email me (Teng Wei Yeo, student number S2566430) at yeotengwei@gmail.com for any questions.
