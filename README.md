@@ -1,7 +1,7 @@
 # Statistical Research Skills: Assignment 1
 
 This assignment is for MATH11188 Statistical Research Skills, academic year 2023–2024. 
-The course is organised and lectured by Dr. Torben Sell, Lecturer in Machine Learning, School of Mathematics, The University of Edinburgh.
+The course is organised and lectured by Dr. Torben Sell, Lecturer in Machine Learning, School of Mathematics, The University of Edinburgh (torben.sell@ed.ac.uk).
 The assignment's problem statement and marking scheme are in `Assignment 1.pdf` and `Assignment 1_marking_scheme.pdf` respectively.
 
 The task is to write a report on the following article: Sloughter, J. M., Gneiting, T., and Raftery, A. E. (2010). 'Probabilistic wind speed forecasting using ensembles and Bayesian model averaging', *Journal of the American Statistical Association*, 105(489), pp. 25–35.
