@@ -25,4 +25,4 @@ The results of my simulation do not reject their claims that the two methods hav
 
 ## Erratum
 My submitted report, `TengWeiYeo_S2566430_A1_SRS.pdf`, falsely states that INLA is inappropriate for wind speeds because wind speed data is not normally distributed. 
-This is incorrect because INLA can be used to fit Latent Gaussian Models, which is a type of GAM, meaning that INLA can model response variables from an exponential family distribution.
+This is incorrect because INLA can be used to fit Latent Gaussian Models, which is a type of Generalised Additive Model, meaning that INLA can model response variables from an exponential family distribution.
